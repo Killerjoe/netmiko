@@ -134,6 +134,8 @@ from netmiko.supermicro import SmciSwitchSmisSSH
 from netmiko.supermicro import SmciSwitchSmisTelnet
 from netmiko.zyxel import ZyxelSSH
 from netmiko.hillstone import HillstoneStoneosSSH
+from netmiko.lancom_router import LancomRouterSSH
+from netmiko.edgecore import EdgeCoreSSH
 
 if TYPE_CHECKING:
     from netmiko.base_connection import BaseConnection
@@ -274,6 +276,8 @@ CLASS_MAPPER_BASE = {
     "zte_zxros": ZteZxrosSSH,
     "yamaha": YamahaSSH,
     "zyxel_os": ZyxelSSH,
+    "lancom_router": LancomRouterSSH,
+    "edgecore": EdgeCoreSSH,
 }
 
 FILE_TRANSFER_MAP = {
